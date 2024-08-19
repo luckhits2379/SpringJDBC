@@ -18,7 +18,7 @@ public class App {
 		
 		String query = "insert into student values (?, ?, ?)";
 		
-		int res = template.update(query, null, "Nirmal", "Mumbai");
+		int res = template.update(query, null, "Nirmal Gurjar", "Mumbai");
 		
 		System.out.println("Total record updated direct flow: "+ res);
 		
