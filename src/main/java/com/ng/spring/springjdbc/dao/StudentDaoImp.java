@@ -10,6 +10,11 @@ public class StudentDaoImp implements StudentDaoInterface {
 
 	JdbcTemplate template;
 
+	
+	public StudentDaoImp(JdbcTemplate jdbcTemplate) {
+		template = jdbcTemplate;
+	}
+
 	public JdbcTemplate getTemplate() {
 		return template;
 	}
